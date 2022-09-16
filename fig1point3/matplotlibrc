@@ -1,0 +1,105 @@
+# matplotlibrc file by Sebastian Billaudelle, based on http://www.huyng.com/posts/sane-color-scheme-for-matplotlib/
+# modified for Sustainable HECAP document (axes and axes ticks changed to dark) in response to comments from Pete Millington
+# and color changer scheme set to mathematica scheme for optimized contrast and visibility
+
+################################################################################
+# backend settings                                                             #
+################################################################################
+backend              : pgf
+backend_fallback     : True
+
+################################################################################
+# misc                                                                         #
+################################################################################
+toolbar              : toolbar2
+timezone             : UTC    # a pytz timezone string, eg US/Central or Europe/Paris
+
+################################################################################
+# lines                                                                        #
+################################################################################
+lines.antialiased    : True   # render lines in antialised (no jaggies)
+lines.linewidth      : 1.8    # line width in points
+
+################################################################################
+# patches                                                                      #
+################################################################################
+patch.linewidth      : 0.3    # edge width in points
+patch.facecolor      : 4C72B0 # blue
+patch.edgecolor      : eeeeee
+patch.antialiased    : True   # render patches in antialised (no jaggies)
+
+################################################################################
+# text rendering                                                               #
+################################################################################
+font.size            : 16.0
+pgf.rcfonts          : True
+#pgf.preamble         : \usepackage{slashed}
+font.family          : serif
+font.serif           : Computer Modern Roman, Palatino
+font.sans-serif      : Arial,Helvetica
+#text.usetex          : true
+#pgf.preamble         : \usepackage{amsmath}, \usepackage{slashed}, #\setmainfont{Computer Modern Roman}, \setsansfont{Computer Modern Roman}}
+#pgf.preamble        : \usepackage{amsmath}, \usepackage{siunitx}, #\usepackage{unicode-math}, \setmainfont{Fira Sans Light}, \setsansfont{Fira #Sans Light}, \setmathfont[range=\mathit]{Fira Sans Light Italic}, #\setmathfont{Fira Sans Light}
+pgf.preamble         : \usepackage{xcolor} \definecolor{C0}{HTML}{1F77B4} \definecolor{C1}{HTML}{FF7F0E} \definecolor{C2}{HTML}{2CA02C} \definecolor{C3}{HTML}{D62728} \definecolor{C4}{HTML}{9467BD} \definecolor{C5}{HTML}{8C564B}  \definecolor{C6}{HTML}{E377C2} \definecolor{C7}{HTML}{7F7F7F} \definecolor{C8}{HTML}{BCBD22} \definecolor{C9}{HTML}{17BECF} 
+text.color           : black
+#text.latex.unicode   : True
+
+################################################################################
+# axes                                                                         #
+################################################################################
+axes.facecolor       : ffffff # axes background color
+axes.edgecolor       : b0b0b0 # axes edge color
+#axes.edgecolor       : black # axes edge color
+#axes.edgecolor       : 555555 # axes edge color
+#axes.linewidth       : 1.5    # edge linewidth
+axes.linewidth       : 0.5    # edge linewidth
+axes.grid            : True   # display grid or not
+axes.titlesize       : Large  # fontsize of the axes title
+axes.labelsize       : large # fontsize of the x any y labels
+axes.labelcolor      : 555555
+#axes.labelcolor      : black
+axes.axisbelow       : True   # whether axis gridlines and ticks are below
+axes.prop_cycle: cycler('color', ['4C72B0', '55A868', 'C44E52', '8172B2', 'CCB974', '64B5CD'])
+#axes.prop_cycle: cycler('color', ['1f77b4', 'ff7f0e', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
+
+################################################################################
+# ticks                                                                        #
+################################################################################
+xtick.major.size     : 0.1      # major tick size in points
+xtick.minor.size     : 0      # minor tick size in points
+xtick.major.pad      : 6      # distance to major tick label in points
+xtick.minor.pad      : 6      # distance to the minor tick label in points
+xtick.color          : 555555 # color of the tick labels
+#xtick.color          : black
+xtick.labelsize      : medium  # fontsize of the tick labels
+xtick.direction      : in     # direction: in or out
+
+ytick.major.size     : 0.1      # major tick size in points
+ytick.minor.size     : 0      # minor tick size in points
+ytick.major.pad      : 6      # distance to major tick label in points
+ytick.minor.pad      : 6      # distance to the minor tick label in points
+ytick.color          : 555555 # color of the tick labels
+#ytick.color          : black
+ytick.labelsize      : medium  # fontsize of the tick labels
+ytick.direction      : in     # direction: in or out
+
+################################################################################
+# grids                                                                        #
+################################################################################
+grid.color           : b0b0b0 # grid color
+grid.linestyle       : -    # 
+#grid.linewidth       : 0.5    # in points
+#grid.linestyle       : :     # 
+#grid.linewidth       : 1.0    # in points
+grid.linewidth       : 0.3    # in points
+
+################################################################################
+# legend                                                                       #
+################################################################################
+legend.fontsize      : x-small
+legend.fancybox      : False
+legend.loc           : best
+legend.framealpha    : 1
+legend.numpoints     : 1
+legend.scatterpoints : 1
+
